@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC07A2FA-55EF-466B-9B35-838C6CB73F8E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>shopping_platform</RootNamespace>
+    <AssemblyName>shopping_platform</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>login.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AchievementManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AchievementManage.Designer.cs">
+      <DependentUpon>AchievementManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppConst.cs" />
+    <Compile Include="BHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BHome.Designer.cs">
+      <DependentUpon>BHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business.Designer.cs">
+      <DependentUpon>Business.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cartList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cartList.Designer.cs">
+      <DependentUpon>cartList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Dryinglist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comment_Dryinglist.Designer.cs">
+      <DependentUpon>Comment_Dryinglist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModifyInformation.Designer.cs">
+      <DependentUpon>ModifyInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyOrader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyOrader.Designer.cs">
+      <DependentUpon>ModifyOrader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OraderAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OraderAdd.Designer.cs">
+      <DependentUpon>OraderAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderManagement.Designer.cs">
+      <DependentUpon>OrderManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PInformation.Designer.cs">
+      <DependentUpon>PInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="purchAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchAdd.Designer.cs">
+      <DependentUpon>purchAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PurchaseManage.Designer.cs">
+      <DependentUpon>PurchaseManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="purchModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchModify.Designer.cs">
+      <DependentUpon>purchModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saleAdd.Designer.cs">
+      <DependentUpon>saleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaleManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SaleManage.Designer.cs">
+      <DependentUpon>SaleManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saleModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saleModify.Designer.cs">
+      <DependentUpon>saleModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shopping_cart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shopping_cart.Designer.cs">
+      <DependentUpon>Shopping_cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shopping_platformDataSet.cs">
+      <DependentUpon>Shopping_platformDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Shopping_platformDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Shopping_platformDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Shopping_platformDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Shopping_platformDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Shopping_platformDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Shopping_platformDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Shopping_platformDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Shopping_platformDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Shopping_platformDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Shopping_platformDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="stockAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stockAdd.Designer.cs">
+      <DependentUpon>stockAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage.Designer.cs">
+      <DependentUpon>StockManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stockModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stockModify.Designer.cs">
+      <DependentUpon>stockModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UFavurBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UFavurBox.Designer.cs">
+      <DependentUpon>UFavurBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccount_Security.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserAccount_Security.Designer.cs">
+      <DependentUpon>UserAccount_Security.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserFavorite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserFavorite.Designer.cs">
+      <DependentUpon>UserFavorite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserHome.Designer.cs">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserOder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserOder.Designer.cs">
+      <DependentUpon>UserOder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPurch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPurch.Designer.cs">
+      <DependentUpon>UserPurch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRefund.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserRefund.Designer.cs">
+      <DependentUpon>UserRefund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wareAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wareAdd.Designer.cs">
+      <DependentUpon>wareAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WareList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WareList.Designer.cs">
+      <DependentUpon>WareList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wareModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wareModify.Designer.cs">
+      <DependentUpon>wareModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WareShoes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WareShoes.Designer.cs">
+      <DependentUpon>WareShoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaresManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WaresManage.Designer.cs">
+      <DependentUpon>WaresManage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AchievementManage.resx">
+      <DependentUpon>AchievementManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BHome.resx">
+      <DependentUpon>BHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business.resx">
+      <DependentUpon>Business.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cartList.resx">
+      <DependentUpon>cartList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comment_Dryinglist.resx">
+      <DependentUpon>Comment_Dryinglist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyInformation.resx">
+      <DependentUpon>ModifyInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyOrader.resx">
+      <DependentUpon>ModifyOrader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OraderAdd.resx">
+      <DependentUpon>OraderAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderManagement.resx">
+      <DependentUpon>OrderManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PInformation.resx">
+      <DependentUpon>PInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="purchAdd.resx">
+      <DependentUpon>purchAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseManage.resx">
+      <DependentUpon>PurchaseManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchModify.resx">
+      <DependentUpon>purchModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saleAdd.resx">
+      <DependentUpon>saleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaleManage.resx">
+      <DependentUpon>SaleManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saleModify.resx">
+      <DependentUpon>saleModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shopping_cart.resx">
+      <DependentUpon>Shopping_cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stockAdd.resx">
+      <DependentUpon>stockAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage.resx">
+      <DependentUpon>StockManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stockModify.resx">
+      <DependentUpon>stockModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UFavurBox.resx">
+      <DependentUpon>UFavurBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccount_Security.resx">
+      <DependentUpon>UserAccount_Security.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFavorite.resx">
+      <DependentUpon>UserFavorite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHome.resx">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserOder.resx">
+      <DependentUpon>UserOder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPurch.resx">
+      <DependentUpon>UserPurch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRefund.resx">
+      <DependentUpon>UserRefund.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wareAdd.resx">
+      <DependentUpon>wareAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WareList.resx">
+      <DependentUpon>WareList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wareModify.resx">
+      <DependentUpon>wareModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WareShoes.resx">
+      <DependentUpon>WareShoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaresManage.resx">
+      <DependentUpon>WaresManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Shopping_platformDataSet.xsc">
+      <DependentUpon>Shopping_platformDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Shopping_platformDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Shopping_platformDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Shopping_platformDataSet.xss">
+      <DependentUpon>Shopping_platformDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Shopping_platformDataSet1.xsc">
+      <DependentUpon>Shopping_platformDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Shopping_platformDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Shopping_platformDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Shopping_platformDataSet1.xss">
+      <DependentUpon>Shopping_platformDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Shopping_platformDataSet2.xsc">
+      <DependentUpon>Shopping_platformDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Shopping_platformDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Shopping_platformDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Shopping_platformDataSet2.xss">
+      <DependentUpon>Shopping_platformDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Shopping_platformDataSet3.xsc">
+      <DependentUpon>Shopping_platformDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Shopping_platformDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Shopping_platformDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Shopping_platformDataSet3.xss">
+      <DependentUpon>Shopping_platformDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Shopping_platformDataSet4.xsc">
+      <DependentUpon>Shopping_platformDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Shopping_platformDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Shopping_platformDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Shopping_platformDataSet4.xss">
+      <DependentUpon>Shopping_platformDataSet4.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="headPortrait\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\信息修改.png" />
+    <Content Include="images\注册1.png" />
+    <Content Include="images\注册2.png" />
+    <Content Include="images\注册3.png" />
+    <Content Include="login.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
